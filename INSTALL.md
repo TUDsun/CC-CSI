@@ -10,7 +10,7 @@ System requirements
 
 	- Version 2019a. (Older versions may also be supported but support is not guaranteed.)  
 
-	- `MaxwellFDFD` toolbox is needed, which is available via https://github.com/wsshin/maxwellfdfd.
+	- `MaxwellFDFD` toolbox is needed, which is available via [MaxwellFDFD's GitHub page](https://github.com/wsshin/maxwellfdfd).
 
 How to install CC-CSI
 ---------------------
