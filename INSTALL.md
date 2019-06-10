@@ -2,7 +2,7 @@ CC-CSI installation instruction
 ===============================
 system requirements
 -------------------
--Operating system
+- Operating system
 
 	Windows, LINUX, OS X, or any operating system where MATLAB can be installed.
 
