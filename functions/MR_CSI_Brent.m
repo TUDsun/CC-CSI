@@ -1,6 +1,8 @@
+%% MR_CSI_Brent
+% function of the multiplicative-regularized constrast source inversion method
 
-function [Mchi, time, chi, vJ, eTot] = MR_CSI_Brent(...
-    Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
+
+function [Mchi, time, chi, vJ, eTot] = MR_CSI_Brent(Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
 
 interval    = 64;
 Mchi        = cell(ceil(pars.itenum / interval) + 1, 1);

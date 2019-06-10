@@ -1,6 +1,46 @@
+%% CC_CSI_Brent
+% function of the cross-correlated constrast source inversion method
+%
+%% Syntax
+% [Mchi, time, chi, vJ, eTot] = CC_CSI_Brent(Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
+% [Mchi, ~, ~, ~, ~] = CC_CSI_Brent(Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
+% [Mchi, time, chi, vJ, eTot] = CC_CSI_Brent(Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, [])
 
-function [Mchi, time, chi, vJ, eTot] = CC_CSI_Brent(...
-    Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
+%% Description
+% Inputs
+%
+% * |Emea|, the measurement data
+% * |Phi|, the measurement matrix
+% * |A|, the stiffness matrix of the finite difference frequency domain method
+% * |chi|, the initial guess of the contrast
+% * |vJ|, the initial guess of the contrast source
+% * |eIncInv|, the incident field in the inversion domain
+% * |eTot|, the initial guess of the total field
+% * |pars|,
+%           .itenum, iteration number
+%           .Ninv, size of inversion domain
+%           .rd,
+%           .rchi,
+%           .ptype, polarization
+%           .bgchi, dielectric constant of the background medium
+%           .omega, angular frequency
+%           .rmea, index of the measurement data
+%           .disflag, display flag
+%           .terflag, termination flag
+%           .recflag, record flag
+%           .str, string
+% * |epsinv|
+% 
+% Outputs
+%
+% |Mchi|, 
+% |time|, 
+% |chi|, 
+% |vJ|, 
+% |eTot|, 
+%
+
+function [Mchi, time, chi, vJ, eTot] = CC_CSI_Brent(Emea, Phi, A, chi, vJ, eIncInv, eTot, pars, epsinv)
 
 interval    = 64;
 Mchi        = cell(ceil(pars.itenum / interval) + 1, 1);
@@ -377,29 +417,3 @@ end
 if pars.recflag; diary off; end
 time        = toc(startTime);
 Mchi{end}  	= mchi{end};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
