@@ -9,9 +9,9 @@ CC-CSI is a MATLAB-based package of the *cross-correlated contrast source invers
 
 - See the following papers for details of CC-CSI.
 
-	- *Cross-Correlated Contrast Source Inversion*, S. Sun, B. J. Kooiji, T. Jin, A. G. Yarovoy, IEEE Transactions on Antennas and Propagation 65 (5), 2592 - 2603
+	- *Cross-Correlated Contrast Source Inversion*, S. Sun, B. J. Kooiji, T. Jin, A. G. Yarovoy, IEEE Transactions on Antennas and Propagation 65 (5), 2592 - 2603, 2017
 
-	- *Inversion of Multifrequency Data With the Cross‐Correlated Contrast Source Inversion Method*, S. Sun, B. J. Kooij, A. G. Yarovoy, Radio Science 53 (6), 710-723
+	- *Inversion of Multifrequency Data With the Cross‐Correlated Contrast Source Inversion Method*, S. Sun, B. J. Kooij, A. G. Yarovoy, Radio Science 53 (6), 710-723, 2018
 
 
 
