@@ -1,0 +1,16 @@
+function x = OrthgPro(x,x0)
+c1      = 1 - real(x0);
+c2      = -imag(x0);
+Pcr     = real(x) < c1;
+Pci     = imag(x) > c2;
+xr      = real(x);
+xi      = imag(x);
+xr(Pcr) = c1;
+xi(Pci) = c2;
+% avr     = circshift(xr, 1, 1) + circshift(xr, -1, 1) + circshift(xr, 1, 1) + circshift(xr, -1, 2);
+% avi     = circshift(xi, 1, 1) + circshift(xi, -1, 1) + circshift(xi, 1, 1) + circshift(xi, -1, 2);
+% xr(Pcr) = avr(Pcr) / 4;
+% xi(Pci) = avi(Pci) / 4;
+% xr(Pcr) = 0;
+% xi(Pci) = 0;
+x       = xr + 1j * xi;
