@@ -1,4 +1,6 @@
-# Cross-correlated Contrast Source Inversion 
+# CC-CSI
+
+Cross-correlated Contrast Source Inversion 
 
 
 1. 
