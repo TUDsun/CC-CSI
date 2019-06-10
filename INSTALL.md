@@ -1,6 +1,6 @@
 CC-CSI installation instruction
 ===============================
-system requirements
+System requirements
 -------------------
 - Operating system
 
@@ -8,9 +8,9 @@ system requirements
 
 - MATLAB
 
-	Version 2019a. (Older versions may be supported but support is not guaranteed.)  
+	- Version 2019a. (Older versions may also be supported but support is not guaranteed.)  
 
-	`MaxwellFDFD` toolbox is needed, which is available via https://github.com/wsshin/maxwellfdfd.
+	- `MaxwellFDFD` toolbox is needed, which is available via https://github.com/wsshin/maxwellfdfd.
 
 How to install CC-CSI
 ---------------------
