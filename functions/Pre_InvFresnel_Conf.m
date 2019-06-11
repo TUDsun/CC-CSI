@@ -96,7 +96,6 @@ chiinv          = cellfun(@(x) ...
     real(chiinv{1}) + 1j * imag(chiinv{1}) * omega{1} / x, omega, ...
     'UniformOutput', false);
 
-Phi         	= cellfun(@(x, y) x * y, Phi, omega, 'UniformOutput', false);
 pars.rmea      	= rmea;
 pars.omega      = omega;
 pars.ptype      = para.pt;

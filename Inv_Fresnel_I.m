@@ -37,6 +37,7 @@ run show_InitGuess.m
 
 %% Iteration starts
 
+Phi                 = cellfun(@(x, y) x * y, Phi, pars.omega, 'UniformOutput', false);
 rf                  = 1 : length(fre);      % select the frequency components for inversion
 pars.bgchi          = 1;
 pars.disflag        = true;                 % show the output every N iterations?

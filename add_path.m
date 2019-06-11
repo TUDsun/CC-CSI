@@ -44,4 +44,7 @@ if ~contains(path, dir); addpath(dir); end
 dir = [pwd, filesep, 'DGradient'];
 if ~contains(path, dir); addpath(dir); end
 
+dir = [pwd, filesep, 'MaxwellFDFD_add'];
+if ~contains(path, dir); addpath(dir); end
+
 
