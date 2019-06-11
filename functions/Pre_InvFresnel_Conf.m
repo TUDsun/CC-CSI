@@ -1,4 +1,4 @@
-function [Emea, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars] = Pre_InvFresnel_Conf(rawdat, fre, regSize, centre, xs, ys, para)
+function [Emea, dat, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars, pars_LSM] = Pre_InvFresnel_Conf(rawdat, fre, regSize, centre, xs, ys, para)
 %%
 NP              = 1 : 3;
 regSize         = round(regSize / para.m_unit) * para.m_unit;
@@ -23,23 +23,25 @@ omega           = cell(1, Nfre);
 Phi             = cell(1, Nfre);
 rmea            = cell(1, Nfre);
 XBP             = cell(1, Nfre);
+pars_LSM        = cell(1, Nfre);
 
 para.disflag    = false;
 para.showconfg  = false;
 
-% Tr              = Tr(fre);
-% Rr              = Rr(fre);
+if isfield(para, 'nK'); nK = para.nK; end
+
+
 for ii = 1 : Nfre
-%     para.Tr     = Tr(ii);
-%     para.Rr     = Rr(ii);
     
-    [dat{ii}, Phi{ii}, A{ii}, Einc{ii}, grid3d{ii}, Rindex, Runiq, pars] ...
+    if isfield(para, 'nK'); para.nK = nK(ii); end
+    
+    [dat{ii}, Phi{ii}, A{ii}, Einc{ii}, grid3d{ii}, pars, pars_LSM{ii}] ...
         = ReadFreData(fre(ii), rawdat, invdom, regSize, para);
     
     omega{ii}   = pars.omega;
     
-    r           = Rindex + repmat(...
-        (0 : (size(dat{ii}, 2) - 1)) * length(Runiq) * NP(para.pt), ...
+    r           = pars.Rindex + repmat(...
+        (0 : (size(dat{ii}, 2) - 1)) * length(pars.Runiq) * NP(para.pt), ...
         size(dat{ii}, 1), 1);
     
     rmea{ii}    = r(:);
@@ -74,7 +76,7 @@ XBP	= cell2mat(XBP);
 
 %% vJ, chiinv, eTotInv
 
-[NRX, NTX]    	= size(dat{1});
+[~, NTX]    	= size(dat{1});
 bgchi        	= 1;
 vJ           	= cell(1, Nfre);
 eTotInv        	= cell(1, Nfre);
@@ -98,3 +100,4 @@ chiinv          = cellfun(@(x) ...
 pars.rmea      	= rmea;
 pars.omega      = omega;
 pars.ptype      = para.pt;
+pars.XBP        = XBP;

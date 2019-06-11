@@ -1,7 +1,7 @@
-function [dat, Phi, Ainv, Einc, grid3d, Rindex, Runiq, pars] ...
+function [dat, Phi, Ainv, Einc, grid3d, pars, pars_LSM] ...
     = ReadFreData(fre, rawdat, invdom, regSize, para)
 
-
+pars_LSM        = [];
 rawdat          = rawdat(rawdat(:, 3) == fre, :);
 m_unit          = para.m_unit;
 r               = 1 : size(rawdat, 1);
@@ -386,6 +386,19 @@ else
             R               = sqrt(Dx .^ 2 + Dy .^ 2);
             Phi	            = omega / 4 * besselh(0, 1, -k * R) * omega ^ 2 / (-1j * omega);
             
+            % modified linear sampling method
+            if isfield(para, 'nK') && para.nK > 0
+                pars_LSM.PhiSin = cell(1,para.nK);
+                pars_LSM.PhiCos    	= cell(1,para.nK);
+                theta           = acos(Dx./R);
+                for n = 1 : para.nK
+                    thetan          = n * theta;% 13-07-2017
+                    Phin            = omega/4*besselh(n,1,-k*R)*omega^2/(-1j*omega);
+                    pars_LSM.PhiSin{n} 	= Phin.*(sin(thetan)); % 13-07-2017
+                    pars_LSM.PhiCos{n} 	= Phin.*(cos(thetan)); % 13-07-2017
+                end
+            end
+            
             k               = k / m_unit;
             Einc            = zeros(prodN, para.NTX);
             
@@ -488,5 +501,7 @@ MdII(nxx(1) + 4 : nxx(2) - 4, nyy(1) + 4 : nyy(2) - 4) = 0;
 rchiTV          = InvInd(MdII(:), PT.TM);
 pars.rchiTV     = rchiTV;
 pars.Nsrc       = para.NTX;
+pars.Rindex     = Rindex;
+pars.Runiq      = Runiq;
 
 end

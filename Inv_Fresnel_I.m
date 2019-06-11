@@ -28,7 +28,7 @@ rawdat(:, 2)    = 5 * (rawdat(:, 2) - 1);
 
 %% Configuration
 
-[Emea, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars] ...
+[Emea, ~, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars, ~] ...
     = Pre_InvFresnel_Conf(rawdat, fre, regSize, centre, xs, ys, para);
 
 %% Display
