@@ -4,7 +4,7 @@ CC-CSI
 Introduction
 ------------
 
-CC-CSI is a MATLAB-based package of the **cross-correlated contrast source inversion** algorithm. This package inverts the Fresnel data with multiple frequency components. It also contains the MR-CSI (multiplicative-regularized CSI) and CSI algorithms. Comparison can be easily made to verify the advantage of introducing the so-called **cross-correlated error term**. 
+CC-CSI is a MATLAB-based package of the **cross-correlated contrast source inversion** algorithm. This package inverts the [Fresnel data](http://www.fresnel.fr/3Ddatabase/) with multiple frequency components. It also contains the MR-CSI (multiplicative-regularized CSI) and CSI algorithms. Comparison can be easily made to verify the advantage of introducing the so-called **cross-correlated error term**. 
 
 - See `INSTALL.md` for installation instruction.
 
