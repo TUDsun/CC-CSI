@@ -1,5 +1,4 @@
-function [Emea, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars] = Pre_InvFresnel_Conf...
-    (rawdat, fre, regSize, centre, xs, ys, para)
+function [Emea, Phi, A, chiinv, vJ, Einc, eTotInv, grid3d, pars] = Pre_InvFresnel_Conf(rawdat, fre, regSize, centre, xs, ys, para)
 %%
 NP              = 1 : 3;
 regSize         = round(regSize / para.m_unit) * para.m_unit;
