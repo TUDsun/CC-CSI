@@ -10,7 +10,7 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 	- data error equation, 
 
-	![](http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D)
+	$$![](http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D)$$
 
 	- state error equation, 
 
