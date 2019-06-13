@@ -8,7 +8,7 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 - Basic formulation 
 
-	- data error equation, 
+	- Data error , 
 
 	<!--- http://latex.codecogs.com/eqneditor/editor.php -->
 
@@ -16,20 +16,20 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 	<div align=center><img src="http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D"/></div>
 
-	- state error equation,
+	- State error ,
 
 	<!--- \gamma_{p,i} = \chi_i e^{\text{inc}}_{p,i} + \chi_i A_i^{-1}j_{p,i} - j_{p,i}  -->
 
 	<div align=center><img src="http://latex.codecogs.com/gif.latex?%5Cgamma_%7Bp%2Ci%7D%20%3D%20%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A_i%5E%7B-1%7Dj_%7Bp%2Ci%7D%20-%20j_%7Bp%2Ci%7D"/></div>
 
 
-	- cross-correlated error equation, 
+	- Cross-correlated error , 
 
 	<!--- \xi_{p,i} = y_{p,i} - \Phi_{p,i}\left(\chi_i e^{\text{inc}}_{p,i} + \chi_i A^{-1}_ij_{p,i}\right) -->
 
 	<div align=center><img src="http://latex.codecogs.com/gif.latex?%5Cxi_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7D%5Cleft%28%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A%5E%7B-1%7D_ij_%7Bp%2Ci%7D%20%5Cright%20%29"/></div>
 
-	- the cost functional of CC-CSI, 
+	- The cost functional of CC-CSI, 
 
 	<!--- \mathcal{C}_{\text{CC-CSI}} = \sum_i\eta^\mathcal{S}_i\sum_p\left\|\rho_{p,i}\right\|^2_\mathcal{S}+\sum_i\eta^\mathcal{D}_i\sum_p\left\|\gamma_{p,i}\right\|^2_\mathcal{D}+\sum_i\eta^\mathcal{S}_i\sum_p\left\|\xi_{p,i}\right\|^2_\mathcal{S} -->
 
