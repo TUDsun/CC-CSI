@@ -8,13 +8,21 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 - Basic Formulation
 
-	data error equation, ![](http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D)
+	data error equation, 
 
-	state error equation, ![](http://latex.codecogs.com/gif.latex?%5Cgamma_%7Bp%2Ci%7D%20%3D%20%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A_i%5E%7B-1%7Dj_%7Bp%2Ci%7D%20-%20j_%7Bp%2Ci%7D)
+	![](http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D)
 
-	cross-correlated error equation, ![](http://latex.codecogs.com/gif.latex?%5Cxi_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi%5Cleft%28%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A_i%5E%7B-1%7Dj_%7Bp%2Ci%7D%5Cright%29)
+	state error equation, 
 
-	cost functional, ![](http://latex.codecogs.com/gif.latex?%5Csum_i%5Cleft%28%20%5Ceta_i%5E%5Cmathcal%7BS%7D%5Csum_p%5Cleft%5C%7C%5Crho_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BS%7D%20&plus;%20%5Ceta_i%5E%5Cmathcal%7BD%7D%5Csum_p%5Cleft%5C%7C%5Cxi_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BD%7D%20&plus;%20%5Ceta_i%5E%5Cmathcal%7BS%7D%5Csum_p%5Cleft%5C%7C%5Cxi_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BS%7D%5Cright%29)
+	![](http://latex.codecogs.com/gif.latex?%5Cgamma_%7Bp%2Ci%7D%20%3D%20%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A_i%5E%7B-1%7Dj_%7Bp%2Ci%7D%20-%20j_%7Bp%2Ci%7D)
+
+	cross-correlated error equation, 
+
+	![](http://latex.codecogs.com/gif.latex?%5Cxi_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi%5Cleft%28%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A_i%5E%7B-1%7Dj_%7Bp%2Ci%7D%5Cright%29)
+
+	cost functional, 
+
+	![](http://latex.codecogs.com/gif.latex?%5Csum_i%5Cleft%28%20%5Ceta_i%5E%5Cmathcal%7BS%7D%5Csum_p%5Cleft%5C%7C%5Crho_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BS%7D%20&plus;%20%5Ceta_i%5E%5Cmathcal%7BD%7D%5Csum_p%5Cleft%5C%7C%5Cxi_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BD%7D%20&plus;%20%5Ceta_i%5E%5Cmathcal%7BS%7D%5Csum_p%5Cleft%5C%7C%5Cxi_%7Bp%2Ci%7D%5Cright%5C%7C%5E2_%5Cmathcal%7BS%7D%5Cright%29)
 
 This package also contains the MR-CSI (multiplicative-regularized CSI) and CSI algorithms for comparison.
 
