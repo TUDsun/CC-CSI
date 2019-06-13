@@ -10,7 +10,7 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 	- data error equation, 
 
-	[//]: # (This may be the most platform independent comment)
+	<!--- \xi_{p,i} = y_{p,i} - \Phi_{p,i}\left(\chi_i e^{\text{inc}}_{p,i} + \chi_i A^{-1}_ij_{p,i}\right) -->
 
 	<div align=center><img src="http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D"/></div>
 
@@ -21,7 +21,7 @@ CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inver
 
 	- cross-correlated error equation, 
 
-	[//]: # (\xi_{p,i} = y_{p,i} - \Phi_{p,i}\left(\chi_i e^{\text{inc}}_{p,i} + \chi_i A^{-1}_ij_{p,i} \right))
+	<!--- \xi_{p,i} = y_{p,i} - \Phi_{p,i}\left(\chi_i e^{\text{inc}}_{p,i} + \chi_i A^{-1}_ij_{p,i}\right) -->
 
 	<div align=center><img src="http://latex.codecogs.com/gif.latex?%5Cxi_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7D%5Cleft%28%5Cchi_i%20e%5E%7B%5Ctext%7Binc%7D%7D_%7Bp%2Ci%7D%20&plus;%20%5Cchi_i%20A%5E%7B-1%7D_ij_%7Bp%2Ci%7D%20%5Cright%20%29"/></div>
 
