@@ -6,12 +6,11 @@ Introduction
 
 CC-CSI is a MATLAB-based package of the **Cross-Correlated Contrast Source Inversion** algorithm. This package inverts the [Fresnel data](http://www.fresnel.fr/3Ddatabase/) with multiple frequency components. 
 
-- Basic Formulation
+- Basic Formulation 这样的代码可以生成如$$x^n+y^n=z^n$$这样的块级公式。
 
 	- data error equation, 
 
 	![](http://latex.codecogs.com/gif.latex?%5Crho_%7Bp%2Ci%7D%20%3D%20y_%7Bp%2Ci%7D%20-%20%5CPhi_%7Bp%2Ci%7Dj_%7Bp%2Ci%7D)
-	$$ $$
 
 	- state error equation, 
 
