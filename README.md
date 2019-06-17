@@ -39,7 +39,7 @@ This package also contains the MR-CSI (multiplicative-regularized CSI) and CSI a
 
 - See `INSTALL.md` for installation instruction.
 
-- For details of CC-CSI, see
+- Citation
 
 	- [*Cross-Correlated Contrast Source Inversion*](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7862846), S. Sun, B. J. Kooij, T. Jin, and A. G. Yarovoy, IEEE Transactions on Antennas and Propagation, 65 (5), 2592 - 2603, 2017
 
