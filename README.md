@@ -42,7 +42,7 @@ This package also contains the MR-CSI (multiplicative-regularized CSI) and CSI a
 
 - We would be delighted to hear from you if you find CC-CSI useful, or if you have any suggestions, contributions, or bug reports. Please send these to 
 
-	- Shilong Sun (shilongsun@icloud.com)
+	- Shilong Sun (shilongsun@126.com)
 
 
 Citation
